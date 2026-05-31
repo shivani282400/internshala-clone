@@ -8,8 +8,8 @@ A production-grade replication of the [Internshala](https://internshala.com/inte
 
 ## Live Demo
 
-🔗 **[internshala-clone.vercel.app](https://internshala-clone.vercel.app)**  
-📦 **[github.com/yourusername/internshala-clone](https://github.com/yourusername/internshala-clone)**
+🔗 **[internshala-clone.vercel.app](internshala-clone-sepia.vercel.app)**  
+📦 **[github.com/yourusername/internshala-clone](https://github.com/shivani282400/internshala-clone)**
 
 ---
 
