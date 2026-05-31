@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* ── Tailwind v4: theme defined in CSS, not tailwind.config.ts ── */
+@theme {
+  --color-is-blue:    #008BCA;
+  --color-is-blue-dk: #0077b5;
+  --color-is-gray:    #4d4d4d;
+  --color-is-green:   #1BAC4B;
+  --color-is-orange:  #FF7F00;
+  --color-is-light:   #F6F7F8;
+  --color-is-border:  #E2E5E8;
+  --color-is-muted:   #9199A3;
+  --color-is-text:    #1A1A2E;
+}
+
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1A1A2E;
+  background-color: #F6F7F8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Range slider (can't be done in Tailwind) ── */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2.5px solid #008BCA;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+}
+input[type='range']::-moz-range-thumb {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2.5px solid #008BCA;
+  cursor: pointer;
+}
+
+/* ── Animations ── */
+@keyframes fadeIn    { from { opacity:0; transform:translateY(4px)  } to { opacity:1; transform:translateY(0)   } }
+@keyframes slideIn   { from { opacity:0; transform:translateX(-10px) } to { opacity:1; transform:translateX(0)   } }
+@keyframes pulseSoft { 0%,100% { opacity:1 } 50% { opacity:0.45 } }
+
+.animate-fade-in    { animation: fadeIn    0.18s ease-out; }
+.animate-slide-in   { animation: slideIn   0.22s ease-out; }
+.animate-pulse-soft { animation: pulseSoft 1.6s ease-in-out infinite; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
