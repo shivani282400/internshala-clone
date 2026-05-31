@@ -1,7 +1,8 @@
 # Internshala Clone — SDE (Web) Internship Assignment
 
-A production-grade replication of the [Internshala](https://internshala.com/internships/) internship search page built with Next.js 15, TypeScript, and Tailwind CSS.
+A production-grade replication of the [Internshala](https://internshala.com/internships/) internship search page built with React (Next.js 15), TypeScript, and Tailwind CSS.
 
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://reactjs.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?logo=tailwindcss)](https://tailwindcss.com/)
